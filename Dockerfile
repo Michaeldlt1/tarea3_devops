@@ -8,7 +8,8 @@ WORKDIR /app
 COPY requirements.txt /app
 
 #4 instalar las dependencias
-RUN --no-cache-dir pip install -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
+
 
 #5 copiar el codigo fuente, si se usa el . en lugar de app.py, se copiaran todos los archivos del directorio actual al contenedor
 COPY app.py /app
