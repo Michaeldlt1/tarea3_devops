@@ -52,7 +52,7 @@ jobs:
       with:
         registry: ghcr.io
         username: ${{ github.actor }}
-        password: ${{ secrets.TOKEN_WR }}
+        password: ${{ secrets.EJERCICIO3 }}
       
     # 7. Publicar la imagen generada
     - name: Publicar la imagen generada
